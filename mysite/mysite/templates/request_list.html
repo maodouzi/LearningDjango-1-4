@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Http Request</title>
+</head>
+<body>
+	<h3>Http Request Function:</h3>
+	request.get_host() => {{ request.get_host }} 
+	<br/><br/>
+	request.get_full_path() => {{ request.get_full_path }} 
+	<br/><br/>
+	request.is_secure() => {{ request.is_secure }} 
+	<br/><br/>
+	UA => {{ ua }}
+	
+	<h3>Http Request Variable:</h3>
+    {% for item in requestList %}
+    	{{ forloop.counter }} : {{ item.0 }} => {{ item.1 }}
+    	<br/><br/>
+    {% endfor %}
+</body>
+</html>
